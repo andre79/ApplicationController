@@ -4,7 +4,7 @@ public class Doutorado implements Handler {
 
 	@Override
 	public Object handlerIt(String data) {
-		String object = "Texto sobre o Doutorado.";
+		String object = "Chama a página web com o texto sobre a doutorado.";
 		return object;
 	}
 

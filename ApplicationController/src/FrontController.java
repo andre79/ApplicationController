@@ -19,7 +19,11 @@ public class FrontController {
 		System.out.println("Escolha uma formação: Graduação, Mestrado e Doutorado");
 
 		String formacao = input.nextLine();
-		System.out.println(ac.doCommand(formacao));
-	}
 
+		try {
+			System.out.println(ac.doCommand(formacao));
+		} catch (NullPointerException e) {
+			System.out.println("Não há classe responsável por esse comando:" + formacao);
+		}
+	}
 }

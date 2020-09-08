@@ -3,6 +3,7 @@ import java.util.HashMap;
 public class ApplicationController {
 
 	private HashMap<String, Handler> commands;
+	private Handler command;
 
 	public ApplicationController() {
 		commands = new HashMap<String, Handler>();
@@ -12,9 +13,11 @@ public class ApplicationController {
 	}
 
 	public Object doCommand(String key) throws Exception {
-		Handler command = commands.getOrDefault(key, null);
-		if (command == null) {
-			throw new Exception("Não a classe responsavel por esse comando:" + key);
+
+		try {
+			command = commands.getOrDefault(key, null);
+		} catch (NullPointerException e) {
+			System.out.println("Não há classe responsável por esse comando:" + key);// TODO: handle exception
 		}
 		return command.handlerIt(key);
 	}
