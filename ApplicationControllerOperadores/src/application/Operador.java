@@ -1,5 +1,6 @@
 package application;
 
-abstract public interface Operador {
-	void execute(Integer number, Integer number2);
+abstract class Operador {
+	void execute(Integer number, Integer number2) {
+	}
 }

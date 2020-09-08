@@ -1,5 +1,8 @@
 import java.util.HashMap;
 
-abstract public interface Handler {
-	public Object handlerIt(String key);
-}
+abstract class Handler  
+{ 
+	public Object handlerIt(String key) {
+		return null;
+	}
+} 

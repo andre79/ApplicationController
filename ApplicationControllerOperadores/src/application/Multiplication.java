@@ -1,6 +1,6 @@
 package application;
 
-public class Multiplication implements Operador {
+public class Multiplication extends Operador {
 	public void execute(Integer number, Integer number2) {
 		System.out.println(multiplication(number, number2));
 	}

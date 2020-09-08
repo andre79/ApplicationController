@@ -10,7 +10,7 @@ public class FrontController {
 		String operator;
 
 		Scanner input = new Scanner(System.in);
-		Controller calculate = new Controller();
+		ApplicationControler calculate = new ApplicationControler();
 		
 		System.out.println("Entre com o primeiro número");
 		input1 = Integer.parseInt(input.nextLine());
@@ -23,7 +23,7 @@ public class FrontController {
 
 		System.out.println("O Resultado é:");
 
-		calculate.handleOperator(operator, input1, input2);
+		ApplicationControler.handleOperator(operator, input1, input2);
 	}
 
 }

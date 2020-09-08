@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Mestrado implements Handler {
+public class Mestrado extends Handler {
 
 	@Override
 	public Object handlerIt(String data) {

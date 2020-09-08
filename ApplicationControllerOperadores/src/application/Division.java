@@ -1,6 +1,6 @@
 package application;
 
-public class Division implements Operador {
+public class Division extends Operador {
 	public void execute(Integer number, Integer number2) {
 		System.out.println(division(number, number2));
 	}
